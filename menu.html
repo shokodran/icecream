@@ -9,64 +9,52 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html"><img src="assets/logo/scoopp.png" alt="Scoopp" class="logo"></a>
-      <nav class="nav" id="nav2">
+      <a class="brand" href="index.html">
+        <img src="assets/logo/scoopp.png" alt="Scoopp" class="logo">
+      </a>
+      <nav class="nav">
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
       </nav>
-      <button class="nav-toggle" id="navToggle2" aria-label="Toggle navigation">☰</button>
     </div>
   </header>
 
   <main>
     <section class="section">
       <div class="container">
-        <h1 class="section-title">Our Full Menu</h1>
-        <p class="section-sub">Delicious flavors for every taste.</p>
+        <h1>Our Full Menu</h1>
         <div class="menu-grid">
           <article class="menu-card">
             <img src="assets/images/straw.jpg" alt="Strawberry Bliss">
-            <div class="menu-card-body">
-              <h3>Strawberry Bliss</h3>
-              <p class="price">Rs. 300</p>
-            </div>
+            <h3>Strawberry Bliss</h3>
+            <p class="price">Rs. 300</p>
           </article>
           <article class="menu-card">
-            <img src="assets/images/choco.jpg" alt="Chocolate Chip">
-            <div class="menu-card-body">
-              <h3>Chocolate Chip</h3>
-              <p class="price">Rs. 350</p>
-            </div>
+            <img src="assets/images/choco.jpeg" alt="Chocolate Chip">
+            <h3>Chocolate Chip</h3>
+            <p class="price">Rs. 350</p>
           </article>
           <article class="menu-card">
-            <img src="assets/images/mago.jpg" alt="Mango Magic">
-            <div class="menu-card-body">
-              <h3>Mango Magic</h3>
-              <p class="price">Rs. 320</p>
-            </div>
+            <img src="assets/images/mago.jpeg" alt="Mango Magic">
+            <h3>Mango Magic</h3>
+            <p class="price">Rs. 320</p>
           </article>
           <article class="menu-card">
             <img src="assets/images/vanilla.jpg" alt="Vanilla">
-            <div class="menu-card-body">
-              <h3>Vanilla</h3>
-              <p class="price">Rs. 300</p>
-            </div>
+            <h3>Vanilla</h3>
+            <p class="price">Rs. 300</p>
           </article>
           <article class="menu-card">
             <img src="assets/images/pista.jpg" alt="Pistachio Crunch">
-            <div class="menu-card-body">
-              <h3>Pistachio Crunch</h3>
-              <p class="price">Rs. 350</p>
-            </div>
+            <h3>Pistachio Crunch</h3>
+            <p class="price">Rs. 350</p>
           </article>
           <article class="menu-card">
             <img src="assets/images/cookie.jpg" alt="Chocolate Chip Cookie">
-            <div class="menu-card-body">
-              <h3>Chocolate Chip Cookie</h3>
-              <p class="price">Rs. 320</p>
-            </div>
+            <h3>Chocolate Chip Cookie</h3>
+            <p class="price">Rs. 320</p>
           </article>
         </div>
       </div>
@@ -74,14 +62,11 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container copyright">© <span id="year2"></span> Scoopp</div>
+    <div class="container">&copy; <span id="year2"></span> Scoopp. All rights reserved.</div>
   </footer>
 
   <script>
     document.getElementById('year2').textContent = new Date().getFullYear();
-    document.getElementById('navToggle2').addEventListener('click', ()=>{
-      document.getElementById('nav2').classList.toggle('open');
-    });
   </script>
 </body>
 </html>
