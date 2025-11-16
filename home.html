@@ -1,43 +1,75 @@
-<div style="position:relative; text-align:center; 
-            background: linear-gradient(135deg, #fdf6f0, #f8f5f0); 
-            padding:60px 0;">
-    <img src="logo/scoopp.png" style="width:350px; height:auto; display:block; margin:0 auto; position:relative; z-index:2;">
-    <h2 style="font-size:28px; color:#e63946; margin-top:20px; font-weight:400; position:relative; z-index:2;">
-        The sweetest adventure starts here
-    </h2>
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scoopp — Home</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo/scoopp.png" alt="Scoopp" class="logo">
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+      </nav>
+    </div>
+  </header>
 
-<div style="text-align:center; margin-top:20px; background-color:#fff8f0; padding:10px 0; border-radius:10px;">
-    <a style="padding:10px 20px; color:#e63946; font-weight:bold; text-decoration:none;" href="home.html">Home</a>
-    <a style="padding:10px 20px; color:#e63946; font-weight:bold; text-decoration:none;" href="about.html">About</a>
-    <a style="padding:10px 20px; color:#e63946; font-weight:bold; text-decoration:none;" href="services.html">Services</a>
-</div>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>The sweetest adventure starts here</h1>
+        <p>We believe that simple, natural food tastes best. Our ice cream is lovingly handmade in small batches using only fresh, local ingredients.</p>
+        <div class="hero-cta">
+          <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+          <a href="#recommended" class="btn btn-outline">Recommended</a>
+        </div>
+      </div>
+    </section>
 
-<h1 style="font-size:50px; text-align:center; margin-top:20px; color:#e63946;">A new adventure in ice cream</h1>
+    <!-- Recommended Flavors Section -->
+    <section id="recommended" class="section">
+      <div class="container">
+        <h2>Recommended Flavors</h2>
+        <div class="cards grid-3">
+          <article class="card">
+            <img src="assets/images/straw.jpg" alt="Strawberry Bliss">
+            <div class="card-body">
+              <h3>Strawberry Bliss</h3>
+              <p class="price">Rs. 300</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/images/choco.jpeg" alt="Chocolate Chip">
+            <div class="card-body">
+              <h3>Chocolate Chip</h3>
+              <p class="price">Rs. 350</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/images/mago.jpeg" alt="Mango Magic">
+            <div class="card-body">
+              <h3>Mango Magic</h3>
+              <p class="price">Rs. 320</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<p style="font-size:20px; text-align:center; line-height:30px; margin-bottom:40px; color:#555;">
-    We believe that simple, natural food tastes best. <br>
-    Our ice cream is lovingly handmade in small batches <br>
-    using only fresh, local ingredients. <br>
-    Every scoop is an adventure of flavor and joy!
-</p>
+  <footer class="site-footer">
+    <div class="container">&copy; <span id="year"></span> Scoopp. All rights reserved.</div>
+  </footer>
 
-<div style="text-align:center; margin-bottom:40px;">
-    <a style="font-size:20px; background-color: #e63946; padding: 15px 35px; color: white; border-radius:5px; text-decoration:none;" 
-       href="https://www.google.com/">Read more</a>
-</div>
-
-<hr style="width: 60%; margin:40px auto; border:1px solid #e63946;">
-
-<h1 style="font-size:50px; text-align:center; color:#ffb703; margin-bottom:20px;">Our Core Flavours</h1>
-
-<div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-bottom:60px;">
-    <img style="width:33%; height:400px; object-fit:cover; border-radius:10px;" src="image 04.jpeg">
-    <img style="width:33%; height:400px; object-fit:cover; border-radius:10px;" src="image 05.jpeg">
-    <img style="width:33%; height:400px; object-fit:cover; border-radius:10px;" src="image 06.jpeg">
-</div>
-
-<h1 style="font-size:50px; text-align:center; color:#e63946; margin-bottom:20px;">Services</h1>
-<div style="text-align:center; margin-bottom:60px;">
-    <video src="videoo/icecream.mp4" controls style="max-width:90%; border-radius:10px; box-shadow:0 0 20px rgba(0,0,0,0.2);"></video>
-</div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
