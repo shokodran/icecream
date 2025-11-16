@@ -1,28 +1,42 @@
-<div style="position:relative; text-align:center; 
-            background: linear-gradient(135deg, #fdf6f0, #f8f5f0); 
-            padding:60px 0;">
-    <img src="logo/scoopp.png" style="width:350px; height:auto; display:block; margin:0 auto; position:relative; z-index:2;">
-    <h2 style="font-size:28px; color:#e63946; margin-top:20px; font-weight:400; position:relative; z-index:2;">
-        Our services are as sweet as our ice cream
-    </h2>
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scoopp — Services</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo/scoopp.png" alt="Scoopp" class="logo">
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+      </nav>
+    </div>
+  </header>
 
-<div style="text-align:center; margin-top:20px; background-color:#fff8f0; padding:10px 0; border-radius:10px;">
-    <a style="padding:10px 20px; color:#e63946; font-weight:bold; text-decoration:none;" href="index.html">Home</a>
-    <a style="padding:10px 20px; color:#e63946; font-weight:bold; text-decoration:none;" href="about.html">About</a>
-    <a style="padding:10px 20px; color:#e63946; font-weight:bold; text-decoration:none;" href="services.html">Services</a>
-</div>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Our Services</h1>
+        <p>We are committed to excellence in every scoop. Our services include custom ice cream orders, catering for events, and exclusive seasonal flavors. Every service is designed to bring joy and unforgettable experiences to our customers. Join us in creating sweet memories, one scoop at a time!</p>
+        <a href="menu.html" class="btn btn-primary">View Menu</a>
+      </div>
+    </section>
+  </main>
 
-<h1 style="font-size:50px; text-align:center; margin-top:20px; color:#e63946;">Services</h1>
+  <footer class="site-footer">
+    <div class="container">&copy; <span id="year4"></span> Scoopp. All rights reserved.</div>
+  </footer>
 
-<p style="font-size:20px; text-align:center; line-height:30px; margin-bottom:40px; color:#555;">
-    We are committed to excellence in every scoop. <br>
-    Our services include custom ice cream orders, catering for events, and exclusive seasonal flavours. <br>
-    Every service is designed to bring joy and unforgettable experiences to our customers. <br>
-    Join us in creating sweet memories, one scoop at a time!
-</p>
-
-<div style="text-align:center; margin-bottom:60px;">
-    <a style="font-size:20px; background-color: #e63946; padding: 15px 35px; color: white; border-radius:5px; text-decoration:none;" 
-       href="https://www.google.com/">Read more</a>
-</div>
+  <script>
+    document.getElementById('year4').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
