@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Frosty Delights</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #fff8f0; /* patel background like homepage */
+        }
+
+        .navbar {
+            background: #e63946; /* red like homepage */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar a {
+            margin: 0 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .menu-container {
+            width: 90%;
+            margin: auto;
+            padding: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .item-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 30%;
+            margin-bottom: 30px;
+            box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .item-card img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .item-card h3 {
+            margin-top: 10px;
+            font-size: 22px;
+            color: #e63946; /* red headings */
+        }
+
+        .item-card p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        button {
+            padding: 12px 18px;
+            background: #e63946; /* red button */
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+
+        /* Responsive adjustments */
+        @media(max-width: 900px){
+            .item-card { width: 45%; }
+        }
+        @media(max-width: 600px){
+            .item-card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="cart.html">Cart 🛒</a>
+</div>
+
+<div class="menu-container">
+
+    <div class="item-card">
+        <img src="assets/images/straw.jpg" alt="">
+        <h3>Strawberry Bliss</h3>
+        <p>Price: 300 PKR</p>
+        <button onclick="addToCart('Strawberry Bliss', 300)">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+        <img src="assets/images/choco.jpeg" alt="">
+        <h3>Chocolate Chip</h3>
+        <p>Price: 350 PKR</p>
+        <button onclick="addToCart('Chocolate Chip', 350)">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+        <img src="assets/images/mago.jpeg" alt="">
+        <h3>Mango Magic</h3>
+        <p>Price: 320 PKR</p>
+        <button onclick="addToCart('Mango Magic', 320)">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+        <img src="assets/images/vanilla.jpg" alt="">
+        <h3>Vanilla</h3>
+        <p>Price: 300 PKR</p>
+        <button onclick="addToCart('Vanilla', 300)">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+        <img src="assets/images/pista.jpg" alt="">
+        <h3>Pistachio Crunch</h3>
+        <p>Price: 350 PKR</p>
+        <button onclick="addToCart('Pistachio Crunch', 350)">Add to Cart</button>
+    </div>
+
+    <div class="item-card">
+        <img src="assets/images/cookie.jpg" alt="">
+        <h3>Chocolate Chip Cookie</h3>
+        <p>Price: 320 PKR</p>
+        <button onclick="addToCart('Chocolate Chip Cookie', 320)">Add to Cart</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

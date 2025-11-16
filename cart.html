@@ -1,0 +1,95 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff7f0;
+            margin: 0;
+        }
+
+        .navbar {
+            background: #ff79c6;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar a {
+            margin: 0 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .cart-container {
+            width: 90%;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .cart-item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+        }
+
+        .payment-box {
+            background: #fce3ff;
+            padding: 25px;
+            border-radius: 12px;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 12px 18px;
+            background: #ff79c6;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="cart.html">Cart 🛒</a>
+</div>
+
+<div class="cart-container">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+
+    <h2 id="total"></h2>
+
+    <div class="payment-box">
+        <h3>Select Payment Method</h3>
+
+        <input type="radio" name="pay" value="Cash on Delivery"> Cash on Delivery (COD) <br><br>
+        <input type="radio" name="pay" value="Credit / Debit Card"> Credit / Debit Card 💳 <br><br>
+        <input type="radio" name="pay" value="Easypaisa"> Easypaisa <br><br>
+        <input type="radio" name="pay" value="JazzCash"> JazzCash <br><br>
+
+        <button onclick="confirmOrder()">Confirm Order</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
