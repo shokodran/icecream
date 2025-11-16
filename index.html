@@ -12,33 +12,31 @@
       <a class="brand" href="index.html">
         <img src="assets/logo/scoopp.png" alt="Scoopp" class="logo">
       </a>
-      <nav class="nav" id="nav">
+      <nav class="nav">
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-inner container">
-        <h1 class="hero-title">The sweetest adventure starts here</h1>
-        <p class="hero-sub">We believe that simple, natural food tastes best. Our ice cream is lovingly handmade in small batches using only fresh, local ingredients.</p>
+      <div class="container hero-inner">
+        <h1>The sweetest adventure starts here</h1>
+        <p>We believe that simple, natural food tastes best. Our ice cream is lovingly handmade in small batches using only fresh, local ingredients.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="menu.html">View Full Menu</a>
-          <a class="btn btn-outline" href="#recommended">Recommended</a>
+          <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+          <a href="#recommended" class="btn btn-outline">Recommended</a>
         </div>
       </div>
     </section>
 
     <!-- Recommended Flavors Section -->
-    <section class="section" id="recommended">
+    <section id="recommended" class="section">
       <div class="container">
-        <h2 class="section-title">Recommended Flavors</h2>
-        <p class="section-sub">Try these fan favorites first!</p>
+        <h2>Recommended Flavors</h2>
         <div class="cards grid-3">
           <article class="card">
             <img src="assets/images/straw.jpg" alt="Strawberry Bliss">
@@ -48,14 +46,14 @@
             </div>
           </article>
           <article class="card">
-            <img src="assets/images/choco.jpg" alt="Chocolate Chip">
+            <img src="assets/images/choco.jpeg" alt="Chocolate Chip">
             <div class="card-body">
               <h3>Chocolate Chip</h3>
               <p class="price">Rs. 350</p>
             </div>
           </article>
           <article class="card">
-            <img src="assets/images/mago.jpg" alt="Mango Magic">
+            <img src="assets/images/mago.jpeg" alt="Mango Magic">
             <div class="card-body">
               <h3>Mango Magic</h3>
               <p class="price">Rs. 320</p>
@@ -64,17 +62,13 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
-    <div class="container copyright">© <span id="year"></span> Scoopp. All rights reserved.</div>
+    <div class="container">&copy; <span id="year"></span> Scoopp. All rights reserved.</div>
   </footer>
 
   <script>
-    const nav = document.getElementById('nav');
-    const navToggle = document.getElementById('navToggle');
-    navToggle.addEventListener('click', () => { nav.classList.toggle('open'); });
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
