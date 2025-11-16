@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scoopp — Menu</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/logo/scoopp.png" alt="Scoopp" class="logo"></a>
+      <nav class="nav" id="nav2">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle2" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Our Full Menu</h1>
+        <p class="section-sub">Delicious flavors for every taste.</p>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img src="assets/images/straw.jpg" alt="Strawberry Bliss">
+            <div class="menu-card-body">
+              <h3>Strawberry Bliss</h3>
+              <p class="price">Rs. 300</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/images/choco.jpg" alt="Chocolate Chip">
+            <div class="menu-card-body">
+              <h3>Chocolate Chip</h3>
+              <p class="price">Rs. 350</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/images/mago.jpg" alt="Mango Magic">
+            <div class="menu-card-body">
+              <h3>Mango Magic</h3>
+              <p class="price">Rs. 320</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/images/vanilla.jpg" alt="Vanilla">
+            <div class="menu-card-body">
+              <h3>Vanilla</h3>
+              <p class="price">Rs. 300</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/images/pista.jpg" alt="Pistachio Crunch">
+            <div class="menu-card-body">
+              <h3>Pistachio Crunch</h3>
+              <p class="price">Rs. 350</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="assets/images/cookie.jpg" alt="Chocolate Chip Cookie">
+            <div class="menu-card-body">
+              <h3>Chocolate Chip Cookie</h3>
+              <p class="price">Rs. 320</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container copyright">© <span id="year2"></span> Scoopp</div>
+  </footer>
+
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+    document.getElementById('navToggle2').addEventListener('click', ()=>{
+      document.getElementById('nav2').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
